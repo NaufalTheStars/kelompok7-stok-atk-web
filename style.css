@@ -1,4 +1,4 @@
-:root{--c:#17bde8;--cd:#0b87ad;--bg:#eef8fc;--tx:#10303b;--line:#bfe7f4;--ok:#1b8a4b;--warn:#b86e00;--bad:#c0332b}
+:root{--c:#d6336c;--cd:#9c1c4a;--bg:#fff1f5;--tx:#3a1420;--line:#f6c9d8;--ok:#2e7d4f;--warn:#a85d00;--bad:#7a1230}
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--tx);font:16px/1.55 "Segoe UI",Tahoma,Arial,sans-serif}
 .wrap{max-width:1120px;margin:0 auto;padding:14px}
@@ -22,14 +22,14 @@ aside a:hover{background:rgba(255,255,255,.32)}
 section.content{background:#fff;border:2px solid var(--line);border-radius:14px;padding:22px;min-width:0}
 .content h2{margin:0 0 6px;color:var(--cd)}
 .content h3{margin:24px 0 8px}
-.lead{color:#3d5e6b;max-width:70ch}
+.lead{color:#6b3a4a;max-width:70ch}
 footer{margin-top:14px;padding:16px;text-align:center;font-size:.92rem}
 .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin:16px 0}
 .card{border:2px solid var(--line);border-radius:12px;padding:12px 14px}
 .card b{display:block;font-size:1.8rem;color:var(--cd);line-height:1.1}
 .card.warn b{color:var(--warn)}
 .grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:12px}
-.fitur{border-left:6px solid var(--c);background:#f5fbfe;padding:10px 14px;border-radius:0 10px 10px 0}
+.fitur{border-left:6px solid var(--c);background:#fff7fa;padding:10px 14px;border-radius:0 10px 10px 0}
 .fitur a{font-weight:700;color:var(--cd)}
 .fitur p{margin:4px 0 0}
 .alur{display:flex;flex-wrap:wrap;gap:8px;align-items:center;list-style:none;padding:0;margin:0}
@@ -38,11 +38,11 @@ footer{margin-top:14px;padding:16px;text-align:center;font-size:.92rem}
 .tw{overflow-x:auto}
 table{width:100%;border-collapse:collapse;margin-top:8px}
 th,td{padding:8px 10px;border-bottom:1px solid var(--line);text-align:left;white-space:nowrap}
-th{background:#e1f4fb;color:var(--cd)}
+th{background:#fde4ec;color:var(--cd)}
 td.n,th.n{text-align:right}
-.badge{padding:2px 10px;border-radius:99px;font-size:.85rem;font-weight:700;background:#e8f6ee;color:var(--ok)}
+.badge{padding:2px 10px;border-radius:99px;font-size:.85rem;font-weight:700;background:#e9f5ee;color:var(--ok)}
 .badge.warn{background:#fff2dc;color:var(--warn)}
-.badge.bad{background:#fde7e5;color:var(--bad)}
+.badge.bad{background:#fbe3e8;color:var(--bad)}
 form.f{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin:14px 0}
 label{display:block;font-weight:600;font-size:.93rem}
 input,select{width:100%;margin-top:4px;padding:9px 10px;border:2px solid var(--line);border-radius:9px;font:inherit;background:#fff}
@@ -52,8 +52,17 @@ input,select{width:100%;margin-top:4px;padding:9px 10px;border:2px solid var(--l
 .btn.sm{padding:3px 10px;font-size:.88rem}
 .bar{display:flex;flex-wrap:wrap;gap:10px;align-items:end;margin:12px 0}
 .bar label{min-width:200px}
-.msg{padding:10px 14px;border-radius:10px;margin:10px 0;background:#e8f6ee;color:var(--ok);font-weight:600}
-.msg.err{background:#fde7e5;color:var(--bad)}
-.empty{color:#5d7b87;padding:14px 0}
+.msg{padding:10px 14px;border-radius:10px;margin:10px 0;background:#e9f5ee;color:var(--ok);font-weight:600}
+.msg.err{background:#fbe3e8;color:var(--bad)}
+.empty{color:#8a5666;padding:14px 0}
 @media(max-width:780px){.main{grid-template-columns:1fr}header h1{font-size:1.3rem}}
 @media print{nav,aside,footer,.bar,.btn{display:none}.main{display:block}section.content{border:0}}
+/* Tema mawar */
+h1,h2,h3{font-family:Georgia,"Times New Roman",serif}
+header{background:linear-gradient(135deg,#e0457b,#b8245a 60%,#8c1a45);padding:26px 18px}
+header h1:before{content:"\1F339  "}
+header h1:after{content:"  \1F339"}
+header p{font-style:italic;letter-spacing:1px}
+.content h2{border-bottom:2px solid var(--line);padding-bottom:6px}
+.fitur{border-left-color:#e0457b}
+.card{background:#fff7fa}
