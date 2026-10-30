@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tambah Barang | Stok ATK</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-page="form" >
+<div class="wrap">
+<header>
+<h1>Sistem Informasi Pendataan Stok Alat Tulis Kantor</h1>
+<p>Berbasis Web</p>
+</header>
+<nav aria-label="Menu utama"><a href="index.html">Home</a><a href="data-barang.html" class=on aria-current=page>Data Barang</a><a href="kategori.html">Kategori</a><a href="barang-masuk.html">Barang Masuk</a><a href="barang-keluar.html">Barang Keluar</a><a href="laporan.html">Laporan Stok</a><a href="pencarian.html">Cari Barang</a><a href="about.html">About</a></nav>
+<div class="main">
+<aside>
+<h3>Menu Cepat</h3>
+<ul>
+<li><a href="tambah-barang.html">+ Tambah Barang</a></li>
+<li><a href="barang-masuk.html">Catat Barang Masuk</a></li>
+<li><a href="barang-keluar.html">Catat Barang Keluar</a></li>
+<li><a href="index.html#menipis">Lihat Stok Menipis</a></li>
+</ul>
+<h3>Info Stok</h3>
+<ul class="info" id="sideinfo"></ul>
+</aside>
+<section class="content">
+<h2 id="judul">Tambah Barang</h2>
+<p class="lead">Isi data barang baru. Kode barang dibuat otomatis.</p>
+<div id="msg" role="status"></div>
+<form class="f" id="f">
+<label>Nama barang<input type="text" name="nama" required></label>
+<label>Kategori<input type="text" name="kategori" list="dl" required></label>
+<datalist id="dl"></datalist>
+<label>Satuan<select name="satuan"><option>Pcs</option><option>Rim</option><option>Box</option><option>Roll</option><option>Pak</option></select></label>
+<label>Stok awal<input type="number" name="awal" min="0" value="0" required></label>
+<label>Batas stok minimum<input type="number" name="min" min="0" value="5" required></label>
+<div><button class="btn" type="submit">Simpan Barang</button> <a class="btn sec" href="data-barang.html">Batal</a></div>
+</form>
+</section>
+</div>
+<footer>&copy; 2026 Kelompok 1 &ndash; Sistem Informasi Pendataan Stok ATK Berbasis Web<br>Tugas UTS Project</footer>
+</div>
+<script src="app.js"></script>
+</body>
+</html>

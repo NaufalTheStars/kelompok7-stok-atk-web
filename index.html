@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home | Stok ATK</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-page="home" >
+<div class="wrap">
+<header>
+<h1>Sistem Informasi Pendataan Stok Alat Tulis Kantor</h1>
+<p>Berbasis Web</p>
+</header>
+<nav aria-label="Menu utama"><a href="index.html" class=on aria-current=page>Home</a><a href="data-barang.html">Data Barang</a><a href="kategori.html">Kategori</a><a href="barang-masuk.html">Barang Masuk</a><a href="barang-keluar.html">Barang Keluar</a><a href="laporan.html">Laporan Stok</a><a href="pencarian.html">Cari Barang</a><a href="about.html">About</a></nav>
+<div class="main">
+<aside>
+<h3>Menu Cepat</h3>
+<ul>
+<li><a href="tambah-barang.html">+ Tambah Barang</a></li>
+<li><a href="barang-masuk.html">Catat Barang Masuk</a></li>
+<li><a href="barang-keluar.html">Catat Barang Keluar</a></li>
+<li><a href="index.html#menipis">Lihat Stok Menipis</a></li>
+</ul>
+<h3>Info Stok</h3>
+<ul class="info" id="sideinfo"></ul>
+</aside>
+<section class="content">
+<h2>Selamat Datang</h2>
+<p class="lead">Sistem ini membantu petugas mencatat dan memantau persediaan alat tulis kantor: pulpen, kertas, map, dan perlengkapan lainnya. Stok barang selalu terbarui setiap ada barang masuk atau keluar.</p>
+<div class="cards" id="stats"></div>
+<h3>Fitur Utama</h3>
+<div class="grid2">
+<div class="fitur"><a href="data-barang.html">Data Barang</a><p>Nama, kategori, jumlah stok, dan status tiap barang.</p></div>
+<div class="fitur"><a href="barang-masuk.html">Barang Masuk</a><p>Catat barang dari supplier. Stok bertambah otomatis.</p></div>
+<div class="fitur"><a href="barang-keluar.html">Barang Keluar</a><p>Catat pemakaian barang. Stok berkurang otomatis.</p></div>
+<div class="fitur"><a href="laporan.html">Laporan Stok</a><p>Rekap stok awal, masuk, keluar, dan stok akhir per bulan.</p></div>
+<div class="fitur"><a href="pencarian.html">Pencarian Barang</a><p>Temukan barang berdasarkan nama, kode, atau kategori.</p></div>
+<div class="fitur"><a href="kategori.html">Kategori</a><p>Ringkasan barang yang dikelompokkan per kategori.</p></div>
+</div>
+<h3>Alur Sistem</h3>
+<ol class="alur"><li>Data Barang</li><li>Barang Masuk (stok bertambah)</li><li>Barang Keluar (stok berkurang)</li><li>Laporan Stok</li></ol>
+<h3 id="menipis">Stok Menipis</h3>
+<p class="lead">Barang di bawah ini perlu segera dibeli kembali.</p>
+<div id="low"></div>
+</section>
+</div>
+<footer>&copy; 2026 Kelompok 1 &ndash; Sistem Informasi Pendataan Stok ATK Berbasis Web<br>Tugas UTS Project</footer>
+</div>
+<script src="app.js"></script>
+</body>
+</html>

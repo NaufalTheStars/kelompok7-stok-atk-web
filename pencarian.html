@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cari Barang | Stok ATK</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-page="cari" >
+<div class="wrap">
+<header>
+<h1>Sistem Informasi Pendataan Stok Alat Tulis Kantor</h1>
+<p>Berbasis Web</p>
+</header>
+<nav aria-label="Menu utama"><a href="index.html">Home</a><a href="data-barang.html">Data Barang</a><a href="kategori.html">Kategori</a><a href="barang-masuk.html">Barang Masuk</a><a href="barang-keluar.html">Barang Keluar</a><a href="laporan.html">Laporan Stok</a><a href="pencarian.html" class=on aria-current=page>Cari Barang</a><a href="about.html">About</a></nav>
+<div class="main">
+<aside>
+<h3>Menu Cepat</h3>
+<ul>
+<li><a href="tambah-barang.html">+ Tambah Barang</a></li>
+<li><a href="barang-masuk.html">Catat Barang Masuk</a></li>
+<li><a href="barang-keluar.html">Catat Barang Keluar</a></li>
+<li><a href="index.html#menipis">Lihat Stok Menipis</a></li>
+</ul>
+<h3>Info Stok</h3>
+<ul class="info" id="sideinfo"></ul>
+</aside>
+<section class="content">
+<h2>Pencarian Barang</h2>
+<p class="lead">Ketik nama, kode, atau kategori barang. Hasil tampil saat Anda mengetik.</p>
+<div class="bar"><label>Kata kunci<input type="search" id="q" placeholder="Contoh: pulpen" autocomplete="off"></label></div>
+<p id="hasil" role="status"></p>
+<div id="tb"></div>
+</section>
+</div>
+<footer>&copy; 2026 Kelompok 1 &ndash; Sistem Informasi Pendataan Stok ATK Berbasis Web<br>Tugas UTS Project</footer>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
